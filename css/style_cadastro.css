@@ -116,3 +116,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
+
+#erroEmail {
+    width: 100%;
+    height: 20px;
+    background-color: red;
+}

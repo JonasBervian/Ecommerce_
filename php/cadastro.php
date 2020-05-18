@@ -28,14 +28,19 @@
         $senha = base64_encode($_POST['cad_senha']);
         
        
-      
-
-       
-        $sql = "INSERT INTO clientes (Nome,dsEndereco,nrEndereco,dsComplemento,dsBairro,nrCEP,dsCidade,dsUF,nrTelefone,nrCelular,dsEmail,nrCPF,nrRG,dtRG,dsUFRG,dsSenha) VALUES ('$nome','$endereco','$numero','$complemento','$bairro','$CEP','$cidade','$estado','$telefone','$celular','$email','$CPF','$RG','$dataRG','$ufRG','$senha')";
-        $result = mysqli_query($conn, $sql);
-       
         
-
+        $sql = "select count(*) as total from clientes where dsEmail = '$email'";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        
+        if($row['total'] == 1){
+            $_SESSION['usuario_existente'] = true;
+            header("Location: ../view/tela_cadastro.php");
+            exit;
+        }else{
+            $sql = "INSERT INTO clientes (Nome,dsEndereco,nrEndereco,dsComplemento,dsBairro,nrCEP,dsCidade,dsUF,nrTelefone,nrCelular,dsEmail,nrCPF,nrRG,dtRG,dsUFRG,dsSenha) VALUES ('$nome','$endereco','$numero','$complemento','$bairro','$CEP','$cidade','$estado','$telefone','$celular','$email','$CPF','$RG','$dataRG','$ufRG','$senha')";
+            $result = mysqli_query($conn, $sql);
+        }     
 
     }
    
