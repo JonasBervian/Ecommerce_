@@ -31,7 +31,7 @@
       
 
        
-        $sql = "INSERT INTO clientes (Nome,dsEndereco,nrEndereco,dsComplemento,dsBairro,nrCEP,dsCidade,dsUF,nrTelefone,nrCelular,dsEmail,nrCPF,nrRG,dtRG,dsUFRG,dsSenha) VALUES ('$nome','$email','$endereco','$numero','$complemento','$bairro','$CEP','$cidade','$estado','$telefone','$celular','$CPF','$RG','$dataRG','$ufRG','$senha')";
+        $sql = "INSERT INTO clientes (Nome,dsEndereco,nrEndereco,dsComplemento,dsBairro,nrCEP,dsCidade,dsUF,nrTelefone,nrCelular,dsEmail,nrCPF,nrRG,dtRG,dsUFRG,dsSenha) VALUES ('$nome','$endereco','$numero','$complemento','$bairro','$CEP','$cidade','$estado','$telefone','$celular','$email','$CPF','$RG','$dataRG','$ufRG','$senha')";
         $result = mysqli_query($conn, $sql);
        
         
