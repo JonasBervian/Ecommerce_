@@ -1,2 +1,2 @@
 # Ecommerce_
-Ecommerce
+Ecommerce criado com HTML, CSS, JavaScript e PHP. Trabalho final!
