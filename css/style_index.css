@@ -1,0 +1,227 @@
+/* GERAL */
+
+li {
+    display: inline;
+}
+
+button {
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/* FIM GERAL */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: #1C1C1C;
+    display: flex;
+}
+
+#logo {
+    width: 200px;
+    height: 90px;
+    background-color: #1C1C1C;
+    text-align: center;
+    color: white;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 179px;
+    height: 71px;
+}
+
+.formBusca {
+    width: 800px;
+    height: 90px;
+    color: #000;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.formBusca input {
+    padding: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBusca img {
+    position: absolute;
+    margin-left: 280px;
+}
+
+form #inputBusca {
+    height: 20px;
+    width: 600px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 0;
+    padding: 10px;
+}
+
+#espaco {
+    width: 100px;
+    height: 70px;
+}
+
+.formButtons {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar button {
+    background-color: #1C1C1C;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    margin-left: 3%;
+}
+
+#navbar button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/*retangulo*/
+
+#itens_menu {
+    background-color: #1C1C1C;
+    width: 100%;
+    height: 3vw;
+    margin: 0;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*itens*/
+
+#itens_menu a {
+    color: #a3a3a3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 50px 0 50px;
+}
+
+#itens_menu a:hover {
+    color: white;
+}
+
+#buttonUserCar {
+    display: block;
+}
+
+#categorias {
+    width: 200px;
+    height: 320px;
+    background-color: white;
+    margin-left: 22vw;
+    position: absolute;
+    border: 1px solid rgb(136, 136, 136);
+    z-index: 1;
+    box-shadow: 8px 8px 0px rgba(104, 104, 104, 0.637);
+}
+
+#categorias a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    color: black;
+}
+
+#categorias a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 136, 136);
+}
+
+#categorias.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* MAIN  */
+
+
+/*main {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+/* Banner */
+
+#banner {
+    width: 70%;
+    height: 25vw;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 15%;
+}
+
+#banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    margin-bottom: 2px;
+}
+
+#banner img.selected {
+    opacity: 1;
+}
+
+
+/* marcas */
+
+.marcas {
+    color: #000;
+    font-size: 25px;
+    margin-top: 2%;
+    font-weight: bold;
+    margin-left: 41%;
+}
+
+
+/*footer*/
+
+.retangulo_footer {
+    height: 30px;
+    width: 100%;
+    background-color: #1C1C1C;
+}

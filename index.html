@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <title>Loja</title>
+</head>
+
+<body>
+    <header>
+
+
+        <nav id="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo_provisorio.png" alt="">
+                </a>
+            </div>
+
+            <form action="#" class="formBusca">
+                <input type="text" name="inputBusca" id="inputBusca" placeholder="Procure por marca, nome, código...">
+                <img src="images/icone_lupa.png" alt="" style="width: 30px; height: 30px;">
+            </form>
+            <div id="espaco"></div>
+            <form action="view/tela_login.html" class="formButtons">
+                <button>
+                        <img src="images/icone_user.png" alt="Ícone Usuário">
+                </button>
+            </form>
+            <form action="" class="formButtons">
+                <button>
+                    <img src="images/icone_cesta.png" alt="Ícone Usuário">
+                </button>
+            </form>
+        </nav>
+
+        <div id="itens_menu">
+            <ul>
+                <li>
+                    <a class="itens" onclick="mostraCateg()">CATEGORIAS</a>
+                </li>
+                <li>
+                    <a class="itens " href="# ">MAIS VENDIDOS</a>
+                </li>
+                <li>
+                    <a class="itens " href="# ">OFERTAS</a>
+                </li>
+                <li>
+                    <a class="itens " href="# ">FALE CONOSCO</a>
+                </li>
+            </ul>
+
+        </div>
+        <div id="categorias" class="hide ">
+            <a href="view/computadores.html">Computadores</a>
+            <a href="view/comput_gamer.html">Computadores Gamers</a>
+            <a href="view/notebook.html">Notebook</a>
+            <a href="view/note_gamer.html">Notebook Gamer</a>
+            <a href="view/celulares.html">Celulares</a>
+            <a href="view/monitores.html">Monitores</a>
+            <a href="view/mouse.html">Mouse</a>
+            <a href="view/teclados.html">Teclado</a>
+            <a href="view/headset.html">Headset Gamer</a>
+            <a href="view/fones_ouvido.html">Fones de Ouvido</a>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <!-- banner <--->
+        <div id="banner">
+            <img class="selected" src="images/bannerProv.png" alt="">
+            <img src="images/bannerProv1.png" alt="">
+            <img src="images/bannerProv2.png" alt="">
+            <img src="images/bannerProv3.png" alt="">
+        </div>
+
+        <!-- marcas <--->
+
+        <div class="marcas">
+            MARCAS PARCEIRAS
+
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="retangulo_footer"></div>
+    </footer>
+
+    <script src="script.js "></script>
+</body>
+
+
+</html>
