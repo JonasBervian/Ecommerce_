@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 button {
@@ -132,5 +133,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .teste {
     width: 200px;
     height: 200px;
-    object-fit: cover;
+    background-color: #1C1C1C;
 }

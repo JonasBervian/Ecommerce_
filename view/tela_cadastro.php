@@ -39,10 +39,22 @@
                     endif;
                     unset($_SESSION['usuario_existente']);
                 ?>
+                <?php
+                    $conn = mysqli_connect($localhost, $user, $password, $banco);
 
+                  
+                ?>
+
+                <?php
+                    foreach($images as $foto){
+                ?>
+                    <div class="teste">
+                        <img src="<?php echo "../images/".$foto["PES_IMG"]?>">                        
+                    </div>
+                <?php
+                }
+                ?>
                 
-                   
-
                 <h2>FAÇA SEU CADASTRO</h2>
                 <div class="input_block">
                     <label>Nome</label>
