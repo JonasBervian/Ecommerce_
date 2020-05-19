@@ -79,6 +79,25 @@
         <h1>Celular</h1>
         <div class="linha"></div>
 
+        <?php
+                    $conn = mysqli_connect($localhost, $user, $password, $banco);   
+                    $sql = "select * from pessoa";
+                    $result = $conn->query($sql);
+                    while ($row = mysqli_fetch_array($result)){
+                        $images[] = $row;
+                    }
+                ?>
+
+                <?php
+                    foreach($images as $foto){
+                ?>
+                    <div class="teste">
+                        <img src="<?php echo "../images/".$foto["PES_IMG"]?>">                        
+                    </div>
+                <?php
+                }
+                ?>
+
 
 
     </main>

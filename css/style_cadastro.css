@@ -128,8 +128,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin: 0 auto;
     font-size: 23px;
 }
-
-.teste img {
-    width: 200px;
-    height: 200px;
-}

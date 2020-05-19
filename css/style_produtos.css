@@ -193,3 +193,8 @@ h1 {
     background-color: #a3a3a3;
     margin-left: 2%;
 }
+
+.teste img {
+    width: 200px;
+    height: 200px;
+}
