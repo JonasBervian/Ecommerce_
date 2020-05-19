@@ -27,8 +27,6 @@
         $ufRG = $_POST['cad_ufrg'];
         $senha = base64_encode($_POST['cad_senha']);
         
-       
-        
         $sql = "select count(*) as total from clientes where dsEmail = '$email'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
@@ -46,6 +44,4 @@
 
     mysqli_close($conn);
     header("Location: ../index.html");
-
-
 ?>
