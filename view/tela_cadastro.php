@@ -120,7 +120,7 @@
     <footer>
 
     </footer>
-    <script src="../script.js"></script>
+    <script src="../javascritp/script_validacao.js"></script>
 
 </body>
 
