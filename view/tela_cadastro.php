@@ -40,9 +40,12 @@
                     unset($_SESSION['usuario_existente']);
                 ?>
                 <?php
-                    $conn = mysqli_connect($localhost, $user, $password, $banco);
-
-                  
+                    $conn = mysqli_connect($localhost, $user, $password, $banco);   
+                    $sql = "select * from pessoa";
+                    $result = $conn->query($sql);
+                    while ($row = mysqli_fetch_array($result)){
+                        $images[] = $row;
+                    }
                 ?>
 
                 <?php
