@@ -32,12 +32,12 @@
                     if(isset($_SESSION['usuario_existente'])):
                 ?>
                     <div id="erroEmail">
-                        <p>[ERRO] Email já cadastrado!</p>
+                        <p>Email já cadastrado!</p>
                     </div>
                 <?php 
                     endif;
                     unset($_SESSION['usuario_existente']);
-                ?>
+                    ?>
                     <h2>FAÇA SEU CADASTRO</h2>
                     <div class="input_block">
                         <label>Nome</label>
